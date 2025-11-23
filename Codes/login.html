@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <title>Weller's Electronics</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="nav-right">
+                <a href="login.html" id="navLogin">Sign In</a>
+                <a href="register.html" id="navRegister">Register</a>
+                <a href="cart.html" id="navCart">Cart</a>
+                <a href="#" id="navLogout">Logout</a>
+            </div>
+        </nav>
+        <main class="container">
+            <section class="card">
+                <h3>Login</h3>
+                <form name="login">
+                    <div class="form-column">
+                        <div class="form-line">
+                            <label>Email</label>
+                            <input type="text" name="username" maxlength="30" placeholder="username@example.com" required>
+                        </div>
+                        <div class="form-line">
+                            <label>Password</label>
+                            <input type="password" name="password" maxlength="15" placeholder="Password" required>
+                        </div>
+                        <div class="form-line">
+                            <div class="form-row">
+                                <button type="submit" id="loginBtn">Login</button>
+                                <button type="button" onclick="location.href='register.html'" id="registerBtn">Register</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </form>
+            </section>
+        </main>
+        <script src="app.js"></script>
+        <script src="login.js"></script>
+    </body>
+</html>
